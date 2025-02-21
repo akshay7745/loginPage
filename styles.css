@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+@media (max-width: 443px) {
+  .main-container {
+    max-height: 926px;
+    max-width: 443px;
+    padding: 38px;
+    /* border: 1px solid pink; */
+  }
+  .main-container > div {
+    width: 100%;
+  }
+  .profilePic {
+    max-width: 209px;
+    max-width: 246px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+  }
+
+  .profilePic img {
+    width: 100%;
+  }
+  .otp-verification-heading {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.63px;
+    letter-spacing: 0%;
+    color: rgba(50, 50, 50, 1);
+    margin-top: 65px;
+    margin-bottom: 20px;
+  }
+  .login-info {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: rgba(182, 182, 182, 1);
+  }
+
+  .inpWrapper {
+    max-width: 367px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .inpWrapper input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    outline: none;
+  }
+  .inpWrapper label {
+    color: rgba(206, 206, 206, 1);
+    position: absolute;
+    top: -9px;
+    left: 21px;
+    background-color: white;
+  }
+  .inpWrapper input:focus {
+    border-color: #f87c47;
+  }
+  .inpWrapper:focus-within label {
+    /* outline: none; */
+    color: #f87c47;
+  }
+
+  .edit {
+    position: relative;
+    max-width: 24px;
+    max-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -38px;
+    left: 264px;
+  }
+
+  .edit img {
+    width: 100%;
+  }
+  .continue {
+    max-width: 367px;
+    max-height: 72px;
+  }
+  .continue button {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(180deg, #ff8d4d 0%, #f87c47 100%);
+  }
+
+  /* Hiding section 1 */
+  #sec-1 {
+    /* display: none; */
+  }
+
+  .back-button {
+    max-width: 19px;
+    max-height: 14px;
+    position: absolute;
+  }
+
+  .up-arrow {
+    position: absolute;
+    /* transform: rotate(180deg); */
+    top: -7px;
+  }
+  .flat-line {
+    position: absolute;
+  }
+  .down-arrow {
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: -10px;
+  }
+
+  .verification-info {
+  }
+}

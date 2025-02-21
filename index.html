@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <section id="sec-1">
+        <div>
+          <figure class="profilePic">
+            <img src="./images/profile.png" alt="profile picture" />
+          </figure>
+          <div class="form-info">
+            <h2 class="otp-verification-heading">OTP Verification</h2>
+            <p class="login-info">
+              Enter email and phone number to send one time Password
+            </p>
+          </div>
+          <form>
+            <fieldset>
+              <div class="inpWrapper">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <div class="edit">
+                  <img src="./images/editIcon.png" alt="edit" />
+                </div>
+              </div>
+              <div class="inpWrapper">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" name="number" id="phoneNumber" />
+              </div>
+              <div class="continue">
+                <button type="submit">Continue</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section id="sec-2">
+        <div class="back-button">
+          <img class="flat-line" src="./images/back.png" />
+          <img class="up-arrow" src="./images/arrow.png" />
+          <img class="down-arrow" src="./images/arrow.png" />
+        </div>
+        <div class="verification-info">
+          <h2 class="otp-verification-heading">OTP Verification</h2>
+          <p class="login-info">
+            Enter email and phone number to send one time Password
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
