@@ -41,15 +41,53 @@
       </section>
       <section id="sec-2">
         <div class="back-button">
-          <img class="flat-line" src="./images/back.png" />
-          <img class="up-arrow" src="./images/arrow.png" />
-          <img class="down-arrow" src="./images/arrow.png" />
+          <img class="flat-line" alt="back button" src="./images/back.png" />
+          <img class="up-arrow" alt="back button" src="./images/arrow.png" />
+          <img class="down-arrow" alt="back button" src="./images/arrow.png" />
         </div>
         <div class="verification-info">
-          <h2 class="otp-verification-heading">OTP Verification</h2>
-          <p class="login-info">
-            Enter email and phone number to send one time Password
+          <h2 class="verification-code-heading">Verification Code</h2>
+          <p class="verification-details">
+            We have sent the verification code to your email address
           </p>
+        </div>
+        <form class="otp-verification">
+          <fieldset>
+            <div class="otp">
+              <div class="otp-inp-wrapper">
+                <input class="otp-inp" type="number" min="0" max="9" required />
+              </div>
+              <div class="otp-inp-wrapper">
+                <input class="otp-inp" type="number" min="0" max="9" required />
+              </div>
+              <div class="otp-inp-wrapper">
+                <input class="otp-inp" type="number" min="0" max="9" required />
+              </div>
+              <div class="otp-inp-wrapper">
+                <input class="otp-inp" type="number" min="0" max="9" required />
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button>Confirm</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <section id="sec-3">
+        <div class="content-wrapper">
+          <div class="success-img-wrapper">
+            <img
+              src="./images/success.png"
+              alt="verification successful icon"
+            />
+          </div>
+          <div class="success-content">
+            <h2>Hey {USER}!</h2>
+            <p>Congratulations! You have been successfully authenticated</p>
+          </div>
+          <div class="done-btn-wrapper">
+            <button>Done</button>
+          </div>
         </div>
       </section>
     </div>
