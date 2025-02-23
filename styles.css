@@ -229,6 +229,7 @@ fieldset {
   }
   .success-content {
     width: 354px;
+    margin: 0 auto;
   }
   .success-content h2 {
     width: 100%;
