@@ -19,18 +19,30 @@
               Enter email and phone number to send one time Password
             </p>
           </div>
-          <form>
+          <form id="userDetails">
             <fieldset>
               <div class="inpWrapper">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  value="akshay@marmeto.com"
+                  name="email"
+                  id="email"
+                />
                 <div class="edit">
                   <img src="./images/editIcon.png" alt="edit" />
                 </div>
+                <p class="email-error-msg"></p>
               </div>
               <div class="inpWrapper">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="tel" name="number" id="phoneNumber" />
+                <input
+                  type="tel"
+                  value="+917899554422"
+                  name="number"
+                  id="phoneNumber"
+                />
+                <p class="phone-error-msg"></p>
               </div>
               <div class="btn-wrapper">
                 <button type="submit">Continue</button>
@@ -39,7 +51,7 @@
           </form>
         </div>
       </section>
-      <section id="sec-2">
+      <section id="sec-2" class="hide">
         <div class="back-button">
           <img class="flat-line" alt="back button" src="./images/back.png" />
           <img class="up-arrow" alt="back button" src="./images/arrow.png" />
@@ -58,22 +70,23 @@
                 <input class="otp-inp" type="number" min="0" max="9" required />
               </div>
               <div class="otp-inp-wrapper">
-                <input class="otp-inp" type="number" min="0" max="9" required />
+                <input class="otp-inp" type="number" required />
               </div>
               <div class="otp-inp-wrapper">
-                <input class="otp-inp" type="number" min="0" max="9" required />
+                <input class="otp-inp" type="number" required />
               </div>
               <div class="otp-inp-wrapper">
-                <input class="otp-inp" type="number" min="0" max="9" required />
+                <input class="otp-inp" type="number" required />
               </div>
             </div>
+            <p class="otp-error-msg"></p>
             <div class="btn-wrapper">
               <button>Confirm</button>
             </div>
           </fieldset>
         </form>
       </section>
-      <section id="sec-3">
+      <section id="sec-3" class="hide">
         <div class="content-wrapper">
           <div class="success-img-wrapper">
             <img
@@ -82,14 +95,15 @@
             />
           </div>
           <div class="success-content">
-            <h2>Hey {USER}!</h2>
+            <h2 class="userNameHeading">Hey {USER}!</h2>
             <p>Congratulations! You have been successfully authenticated</p>
           </div>
           <div class="btn-wrapper">
-            <button>Done</button>
+            <button class="done-btn">Done</button>
           </div>
         </div>
       </section>
     </div>
+    <script src="./login.js"></script>
   </body>
 </html>
